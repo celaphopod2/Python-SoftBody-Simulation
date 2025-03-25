@@ -170,7 +170,7 @@ def collide(obj1,obj2,colfactor = 1):
                 j.add_force(colfactor*timecorrect*-1*magnitude(j.vel - i.vel)*rad_norm/delaytime)
 
 
-#Creating Softbodies, it takes the position of the upper left corner point, velocity of the softbody, angular velocity, length, width, color and elasticity value
+#Creating Softbodies, it takes the position of the upper left corner point (x,y), velocity of the softbody (x,y), angular velocity, length, width, color and elasticity value
 
 block1 = Softbody(np.array([200.0, 200.0]), np.array([30.0, 0.0]), 0.2, 10, 10, (250,220,1),90)
 block2 = Softbody(np.array([550.0, 200.0]), np.array([0.0, 0.0]), 0, 10, 10, (20,220,1),90)
